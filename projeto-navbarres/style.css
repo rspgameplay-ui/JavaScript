@@ -40,11 +40,30 @@ header {
     width: 80px;
     border: none;
 }
-.menuicon {
-    mix-blend-mode: multiply;
+.menumobileicon {
+    display: none;
 }
 .menumobileicon button {
+    display: flex;
     background: transparent;
     border: none;
     cursor: pointer;
+}
+.menumobile {
+    display: none;
+}
+
+@media screen and (max-width: 650px) { 
+.navlist {
+    display: none;
+}
+.loginbutton {
+    display: none;
+}
+.menumobileicon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
 }
