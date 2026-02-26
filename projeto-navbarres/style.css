@@ -55,10 +55,12 @@ header {
 
 @media screen and (max-width: 650px) { 
 .navlist {
-    display: none;
+    display: flex;    
+    flex-direction: column;
 }
 .loginbutton {
-    display: none;
+    display: flex;
+    flex-direction: column;
 }
 .menumobileicon {
     display: flex;
