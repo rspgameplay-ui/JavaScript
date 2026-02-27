@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Shadows+Into+Light+Two&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+}
+body {
+    background-image: url(assets/fundo.jpg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+}
+header {
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul:not(.sidebar) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100vw;
+}
+li {
+    display: flex;
+}
+a {
+    color: aliceblue;
+}
+.logo {
+    font-size: 1.8em;
+}
+.nav-bar-1 {
+    display: none;
+}
+#show-icon {
+    font-size: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 230px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;   
+    align-items: flex-start; 
+    background-color: rgba(255, 255, 255, 0.205);
+    box-shadow: 10px 10px rrgba(0, 0, 0, 0.500);
+    backdrop-filter: blur(10px);
+}
+
+.nav-bar-2 {
+    padding: 50px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.43);
+}
+#close-icon {
+    padding: 40px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+} 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 40px ;
+    gap: 25px;
+}
+h1 {
+    font-size: 3em;
+    color: aliceblue;
+}
+p {
+    font-size: 1.1em;
+    color: rgba(240, 248, 255, 0.723);
+}
+
+@media screen and (min-width: 667px) {
+.nav-bar-1 {
+    display: flex;
+}
+#show-icon {
+    display: none;
+}
+.sidebar{
+    display: none;
+}
+}
